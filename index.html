@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta charset="UTF8">
+	</head>
+	<body>
+		<p> copy/paste key - one of most overused keys, mostly combination of meta+c/v , shift/ctrl+insert or ctrl c/v  <p>
+		<h1>
+			REMAP YOUR COPY/PASTE KEY TO:
+		</h1>
+		<p> click to set ctrl + v to these keys: </p>
+		<ul>
+			<li onclick="copyEnter()">
+				ENTER KEY
+			</li>
+			<li onclick="copyBackspace()">
+				BACKSPACE KEY
+			</li>
+			<li onclick="copyDelete()">
+				DELETE KEY
+			</li>
+			<li onclick="copySpace()">
+				SPACE KEY
+			</li>
+			<li onclick="copyTab()">
+				TAB KEY
+			</li>
+			<li onclick="copyBell()">
+				TERMINAL NOTIFICATION
+			</li>
+			<li onclick="copyVtab()">
+				VERTICAL TAB KEY
+			</li>
+			<li onclick="copyEsc()">
+				ESC KEY
+			</li>
+			<li onclick="copyNothing()">
+				NOTHING
+			</li>
+			<li onclick="copyNonbreak()">
+				NON-BREAKING SPACE
+			</li>
+			<li onclick="copyReverse()">
+				REVERSE TEXT
+			</li>
+		</ul>
+	<script>
+		function copyEnter() {
+navigator.clipboard.writeText("\u000a");
+		};
+		function copyTab() {
+navigator.clipboard.writeText("\u0009");
+		};
+		function copyVtab() {
+navigator.clipboard.writeText("\u000b");
+		};
+		function copyEsc() {
+navigator.clipboard.writeText("\u001b");
+		};
+		function copyBackspace() {
+navigator.clipboard.writeText("\u0008");
+		};
+		function copyDelete() {
+navigator.clipboard.writeText("\u007f");
+		};
+		function copySpace() {
+navigator.clipboard.writeText("\u0020");
+		};
+		function copyBell() {
+navigator.clipboard.writeText("\u0007");
+		};
+		function copyNothing() {
+navigator.clipboard.writeText("\u0000");
+		};
+		function copyReverse(){
+navigator.clipboard.writeText("\u202e");
+		};
+		function copyNonbreak(){
+navigator.clipboard.writeText("\u00a0");
+		};
+	</script>
+	</body>
+</html>

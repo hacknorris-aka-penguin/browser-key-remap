@@ -3,11 +3,11 @@
 		<meta charset="UTF8">
 	</head>
 	<body>
-		<p> copy/paste key - one of most overused keys, mostly combination of meta+c/v , shift/ctrl+insert or ctrl c/v  <p>
+		<p> paste key - one of most overused keys, mostly combination of meta+v , shift+insert, ctrl+shift+v or ctrl+v  <p>
 		<h1>
-			REMAP YOUR COPY/PASTE KEY TO:
+			REMAP YOUR PASTE KEY TO:
 		</h1>
-		<p> click to set ctrl + v to these keys: </p>
+		<p> click any item from list to set ctrl + v to these keys: </p>
 		<ul>
 			<li onclick="copyEnter()">
 				ENTER KEY
@@ -42,7 +42,11 @@
 			<li onclick="copyReverse()">
 				REVERSE TEXT
 			</li>
+			<li onclick="copySus()" style="color: white;">
+				IMPASTA
+			</li>
 		</ul>
+		<p>note - remapping <b>might</b> break some apps or output weird characters depending on OS configuration</p>
 	<script>
 		function copyEnter() {
 navigator.clipboard.writeText("\u000a");
@@ -77,6 +81,9 @@ navigator.clipboard.writeText("\u202e");
 		function copyNonbreak(){
 navigator.clipboard.writeText("\u00a0");
 		};
+		function copySus(){
+navigator.clipboard.writeText("ඞ")
+		}
 	</script>
 	</body>
 </html>
